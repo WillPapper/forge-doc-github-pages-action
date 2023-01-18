@@ -4,7 +4,14 @@ name: Docs
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: [$default-branch]
+    # In the GitHub Actions Marketplace template, we can use $default-branch
+    # However, $default-branch functions in templates but not in workflows
+    # branches: [ $default-branch ]
+
+    # Therefore, if you're using this GitHub Action directly, you need to add
+    # branches below
+    # Add branch names that you want to run the Action on here
+    branches: [main, master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
