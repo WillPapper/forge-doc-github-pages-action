@@ -8,6 +8,6 @@ Enable GitHub Pages in the `Pages` setting of your repository. Make sure to choo
 
 After that, you can copy `.github/workflows/docs.yml` to your repository. A GitHub Actions Marketplace page will be available soon.
 
-## Example
+## Generated Docs Example
 
-You can view an example of the generated docs here: https://wpapper.github.io/forge-doc-github-pages-action/
+You can view an example of the generated docs on GitHub Pages here: https://wpapper.github.io/forge-doc-github-pages-action/
