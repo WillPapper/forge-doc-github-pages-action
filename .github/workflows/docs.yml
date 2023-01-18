@@ -33,6 +33,9 @@ jobs:
       - name: Generate docs
         run: forge doc --build
 
+      - name: Debug build directory
+        run: ls -lah docs/book
+
   deploy:
     environment:
       name: github-pages
