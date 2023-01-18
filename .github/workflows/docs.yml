@@ -36,12 +36,6 @@ jobs:
       - name: Debug build directory
         run: ls -lah docs/book
 
-  deploy:
-    environment:
-      name: github-pages
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
